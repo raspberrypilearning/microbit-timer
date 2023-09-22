@@ -2,7 +2,7 @@ There might be times when you need to time something.
 
 You could show a countdown timer on the LEDs.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eAaWKs4Am53j
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eAaWKs4Am53j
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 
