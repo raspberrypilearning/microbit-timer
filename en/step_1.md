@@ -1,59 +1,37 @@
-## Introduction
+There might be times when you need to time something.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+You could show a countdown timer on the LEDs.
 
-### What you will make
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eAaWKs4Am53j
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+In this code:
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+- a variable called `timer`{:class='microbitvariables'} is used to hold a number. It is set to `0` when the code first runs.
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+    <img src="images/onstart.png" alt="The 'on start' block containing a 'set timer to 0' block." width="150"/>
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+- when there is a loud sound, the value of the `timer`{:class='microbitvariables'} variable is set to `10`.
 
-+ A computer or tablet capable of running Scratch 3
+    <img src="images/onloud.png" alt="The 'on loud sound' block containing a 'set timer to 10' block." width="150"/>
 
-### Software
+- the forever loop checks if the `timer`{:class='microbitvariables'} variable is more than `0` (so there **has** been a loud sound). 
+  
+    <img src="images/foreverif.png" alt="The 'forever' block containing a 'if' block, with 'timer > 0' as the condition." width="200"/>
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
+    if the result of the `timer > 0`{:class='microbitlogic'} comparison is True: 
+    
+    ...the `timer`{:class='microbitvariables'} variable value is reduced by `1`...
 
-### Downloads
+    <img src="images/change.png" alt="The 'change timer by -1' block is now shown in the sequence." width="200"/>
 
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
+    ...the `timer`{:class='microbitvariables'}  variable value is then displayed on the LEDs using the `show number`{:class='microbitbasic'} block
+  
+    <img src="images/show.png" alt="The 'show number' block is now shown in the sequence. It contains the 'timer' variable as the number to show"  width="200"/>
 
---- /collapse ---
+    ...a one-second (1000 ms) `pause`{:class='microbitbasic'} is then added before the loop starts again.
+  
+    <img src="images/pause.png" alt="The 'pause' block is now shown in the sequence."  width="200"/>
 
---- collapse ---
----
-title: What you will learn
----
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+The example shows the timer starting when there is a loud sound, but you can set the timer to 10 on a different event, for example when the micro:bit is moved, or a button is pressed.
