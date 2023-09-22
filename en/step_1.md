@@ -22,7 +22,7 @@ You can change the timer length by altering the second number in the `for`{:clas
 
 ### Countdown, not count up
 
-To create a countdown, you will need to delete the value of the second variable from one more than the end number (`4` in this example).
+To create a countdown, you will need to delete the value of the `second`{:class='microbitvariables'} variable from the end number (`4` in this example) plus one (so `5` in this example).
 
 Here is how you would change the code.
 
