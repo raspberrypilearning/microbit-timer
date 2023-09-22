@@ -1,6 +1,6 @@
 There may be times when you need to time something.
 
-You could show a countdown timer on the LEDs.
+You could show a timer on the LEDs.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_deg02oMaTHv8
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
