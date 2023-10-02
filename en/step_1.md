@@ -2,8 +2,16 @@ There may be times when you need to time something.
 
 You could show a timer on the LEDs.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_deg02oMaTHv8
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onGesture(Gesture.Shake, function () {
+    for (let second = 0; second <= 4; second++) {
+        basic.showNumber(second + 1)
+        basic.pause(1000)
+    }
+    basic.showIcon(IconNames.EighthNote)
+    basic.clearScreen()
+})
+```
 
 In this code:
 
@@ -26,5 +34,13 @@ To create a countdown, you will need to delete the value of the `second`{:class=
 
 Here is how you would change the code.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fw1beAUiti0p
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onGesture(Gesture.Shake, function () {
+    for (let second = 0; second <= 4; second++) {
+        basic.showNumber(5 - second)
+        basic.pause(1000)
+    }
+    basic.showIcon(IconNames.EighthNote)
+    basic.clearScreen()
+})
+```
