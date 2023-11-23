@@ -1,6 +1,6 @@
-There may be occasions when you need to time something.
+Er kunnen momenten zijn waarop je iets moet timen.
 
-You can show a timer on the LEDs in the following way.
+Je kunt op de volgende manier een timer op de LED's tonen.
 
 ```microbit
 input.onGesture(Gesture.Shake, function () {
@@ -13,25 +13,25 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-In this code:
+In deze code:
 
-The `second`{:class='microbitvariables'} variable takes on each value from `0` to the end number (`4` in our example) and counts up by one each time.
+De `seconde`{:class='microbitvariables'} variabele neemt elke waarde aan van `0` tot het eindgetal (`4` in ons voorbeeld) en telt er elke keer één bij op.
 
-The value of the `second`{:class='microbitvariables'} variable is added to `1` and the total is displayed on the LEDs for one second (the length of time set in the `pause`{:class='microbitbasic'} block).
+De waarde van de `seconde`{:class='microbitvariables'} variabele wordt opgeteld bij `1` en het totaal wordt gedurende één seconde weergegeven op de LED's (de lengte van de tijd ingesteld in het `pauzeer (ms)`{:class='microbitbasic'} blok).
 
-After the last number (`5`) is displayed, the `show icon`{:class='microbitbasic'} block is used to show a musical note and then the LEDs are turned off by using the `clear screen`{:class='microbitbasic'} block.
+Nadat het laatste getal (`5`) is weergegeven, wordt het `toon pictogram`{:class='microbitbasic'} blok gebruikt om een muzieknoot te tonen en vervolgens worden de LED's uitgeschakeld door gebruik te maken van het `wis scherm`{:class='microbitbasic'} blok.
 
-The example shows the timer starting when the micro:bit is shaken, but you can set it to start on other events; for example, when a button is pressed. You could also put it in a function if you want to call it at different places in your code.
+Het voorbeeld toont de timer die begint wanneer de micro:bit wordt geschud, maar je kunt hem ook instellen om te starten op andere gebeurtenissen; bijvoorbeeld wanneer er op een knop wordt gedrukt. Je kunt het ook in een functie zetten als je het op verschillende plaatsen in je code wilt aanroepen.
 
-### Change the timer length
+### Wijzig de duur van de timer
 
-You can change the timer length by altering the second number in the `for`{:class='microbitloops'} block. Set it to one less than the number you want to end on (remember the `+`{:class='microbitmath'} block is used).
+Je kunt de duur van de timer wijzigen door het tweede getal in het `voor`{:class='microbitloops'} blok te veranderen. Zet het op één minder dan het aantal waarop je wilt eindigen (vergeet niet dat het `+`{:class='microbitmath'} blok wordt gebruikt).
 
-### Countdown, not count up
+### Aftellen, niet optellen
 
-To create a countdown, you need to subtract the value of the `second`{:class='microbitvariables'} variable from the end number (`4` in this example) plus one (so `5` in this example).
+Om een aftelling te creëren, moet je de waarde van de `seconde`{:class='microbitvariables'} variabele aftrekken van het eindgetal (`4` in dit voorbeeld) plus één (dus `5` in dit voorbeeld).
 
-Here is how you would change the code.
+Zo zou je de code kunnen veranderen.
 
 ```microbit
 input.onGesture(Gesture.Shake, function () {
