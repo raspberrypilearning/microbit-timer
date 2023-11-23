@@ -1,10 +1,10 @@
-title: Creating a timer
+title: Een timer maken
 hero_image: images/banner.png
-description: Create a timer using pause blocks, selection, and variables
+description: Maak een timer met behulp van pauzeblokken, selectie en variabelen
 version: 4
 listed: false
 copyedit: false
 last_tested: "2023-09-22"
 steps:
   - 
-    title: Introduction
+    title: Inleiding
