@@ -1,0 +1,10 @@
+---
+title: Δημιουργία χρονομέτρου
+hero_image: images/banner.png
+description: Δημιούργησε ένα χρονόμετρο χρησιμοποιώντας μπλοκ παύσης, επιλογής και μεταβλητών
+version: 4
+listed: false
+copyedit: false
+last_tested: "2023-09-22"
+steps:
+  - title: Εισαγωγή
