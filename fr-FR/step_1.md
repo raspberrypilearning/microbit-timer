@@ -1,6 +1,6 @@
-There may be occasions when you need to time something.
+Il peut arriver que tu aies besoin de temps pour quelque chose.
 
-You can show a timer on the LEDs in the following way.
+Tu peux afficher un minuteur sur les LED de la manière suivante.
 
 ```microbit
 input.onGesture(Gesture.Shake, function () {
@@ -13,25 +13,25 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-In this code:
+Dans ce code :
 
-The `second`{:class='microbitvariables'} variable takes on each value from `0` to the end number (`4` in our example) and counts up by one each time.
+La variable `seconde`{:class='microbitvariables'} prend sur chaque valeur de `0` au nombre final (`4` dans notre exemple) et compte un par un.
 
-The value of the `second`{:class='microbitvariables'} variable is added to `1` and the total is displayed on the LEDs for one second (the length of time set in the `pause`{:class='microbitbasic'} block).
+La valeur de la variable `seconde`{:class='microbitvariables'} est ajoutée à `1` et le total est affiché sur les LED pendant une seconde (la durée définie dans le bloc `pause`{:class='microbitbasic'}).
 
-After the last number (`5`) is displayed, the `show icon`{:class='microbitbasic'} block is used to show a musical note and then the LEDs are turned off by using the `clear screen`{:class='microbitbasic'} block.
+Après le dernier nombre (`5`) affiché, le bloc `montrer l'icône`{:class='microbitbasic'} est utilisé pour afficher une note musicale, puis les LED sont désactivées en utilisant le bloc `effacer l'écran`{:class='microbitbasic'}.
 
-The example shows the timer starting when the micro:bit is shaken, but you can set it to start on other events; for example, when a button is pressed. You could also put it in a function if you want to call it at different places in your code.
+L'exemple montre que le minuteur démarre lorsque le micro:bit est secoué, mais tu peux le régler pour qu'il démarre lors d'autres événements ; par exemple, lorsqu'un bouton est pressé. Tu peux également le placer dans une fonction si tu souhaites l'appeler à différents endroits de ton code.
 
-### Change the timer length
+### Modifier la durée du minuteur
 
-You can change the timer length by altering the second number in the `for`{:class='microbitloops'} block. Set it to one less than the number you want to end on (remember the `+`{:class='microbitmath'} block is used).
+Tu peux modifier la durée du minuteur en modifiant le deuxième nombre dans le bloc `pour`{:class='microbitloops'}. Définis-le sur un nombre inférieur au nombre sur lequel tu veux terminer (n'oublie pas que le bloc `+`{:class='microbitmath'} est utilisé).
 
-### Countdown, not count up
+### On compte à l’envers, pas à l’endroit
 
-To create a countdown, you need to subtract the value of the `second`{:class='microbitvariables'} variable from the end number (`4` in this example) plus one (so `5` in this example).
+Pour créer un compte à rebours, tu dois soustraire la valeur de la variable `seconde`{:class='microbitvariables'} du nombre final (`4` dans cet exemple) plus un (donc `5` dans cet exemple).
 
-Here is how you would change the code.
+Voici comment tu modifieras le code.
 
 ```microbit
 input.onGesture(Gesture.Shake, function () {
