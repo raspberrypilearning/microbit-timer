@@ -1,0 +1,10 @@
+---
+title: Créer un minuteur
+hero_image: images/banner.png
+description: Crée un minuteur à l'aide de blocs pause, sélection et variables
+version: 4
+listed: false
+copyedit: false
+last_tested: "2023-09-22"
+steps:
+  - title: Introduction
